@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
             </li>
             <li>
 
-              <Link href="/bolgs">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,11 @@
 import blogs from "@/app/data/blogs";
 
+export function generateStaticParams() {
+    return blogs.map((blog) => ({
+        id: blog.id
+    }))
+}
+
 
 export default function page({ params }) {
     const { id } = params; // folder name id ty hoba 
