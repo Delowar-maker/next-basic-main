@@ -12,3 +12,6 @@ git push -u origin main
 //ব্রাউজারের দুইটা ল্যাঙ্গুয়েজ পড়তে আমরা দুইটা লাইব্রেরী ইউজ করতে পারি
 1. npm i @formatjs/intl-localematcher
 2. npm i negotiator
+
+
+//next statr 12:18 M:8 part 4
