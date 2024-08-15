@@ -67,3 +67,21 @@ db.employees.find({
 db.employees.find({
     salary: { $nin: [25000, 50000] }
 })
+
+// Logical Operators
+use('CraftShop') //CraftShop database Name
+
+db.employees.find({
+    $and: [ // multiple condition
+        { salary: { $gt: 50000 } },
+        { name: { $eq: "John" } }
+    ]
+})
+use('CraftShop') //CraftShop database Name
+
+db.employees.find({
+    $or: [ // multiple condition
+        { salary: { $gt: 50000 } },
+        { name: { $eq: "John" } }
+    ]
+})

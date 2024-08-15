@@ -45,6 +45,52 @@ db.brands.findOne(
 use('CraftShop') //CraftShop database Name
 
 db.brands.find(
-    {}, // spilice parometer
+    {}, // spacial parometer
     { projection: { _id: 0 } }
 )
+
+use('CraftShop') //CraftShop database Name
+
+db.employees.find({
+    salary: { $eq: 50000 }
+})
+db.employees.find({
+    salary: { $ne: 50000 }
+})
+db.employees.find({
+    salary: { $gt: 50000 }
+})
+db.employees.find({
+    salary: { $gte: 50000 }
+})
+db.employees.find({
+    salary: { $lt: 50000 }
+})
+db.employees.find({
+    salary: { $lte: 50000 }
+})
+db.employees.find({
+    salary: { $in: [25000, 50000] }
+})
+db.employees.find({
+    salary: { $nin: [25000, 50000] }
+})
+
+
+// Logical Operators
+use('CraftShop') //CraftShop database Name
+
+db.employees.find({
+    $and: [ // multiple condition
+        { salary: { $gt: 50000 } },
+        { name: { $eq: "John" } }
+    ]
+})
+use('CraftShop') //CraftShop database Name
+
+db.employees.find({
+    $or: [ // multiple condition
+        { salary: { $gt: 50000 } },
+        { name: { $eq: "John" } }
+    ]
+})
