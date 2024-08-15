@@ -38,3 +38,13 @@ db.brands.find()
 db.brands.findOne(
     { "name": "Adidas" }
 )
+
+// Projection Query
+// The project() method allows you to specify which fields you want to include in the query result.
+
+use('CraftShop') //CraftShop database Name
+
+db.brands.find(
+    {}, // spilice parometer
+    { projection: { _id: 0 } }
+)
