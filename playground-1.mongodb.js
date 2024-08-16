@@ -94,3 +94,18 @@ db.employees.find({
         { name: { $eq: "John" } }
     ]
 })
+
+use('CraftShop') //CraftShop database Name
+// exists true show property
+//exists false all authers show
+db.brands.find({
+    city: { $exists: true } // if city is exist then show city property
+})
+db.brands.find({
+    city: { $exists: false } // if city is not exist then show city property
+})
+
+use('CraftShop') //CraftShop database Name
+db.employees.find({
+    salary: { $type: 2 }
+})

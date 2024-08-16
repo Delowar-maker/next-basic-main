@@ -85,3 +85,17 @@ db.employees.find({
         { name: { $eq: "John" } }
     ]
 })
+
+use('CraftShop') //CraftShop database Name
+
+db.monthlyBudget.find({
+    $expr: {
+        $lt: ['$amount', '$max']
+    }
+})
+db.monthlyBudget.find({
+    budget: { $mod: [2, 0] }
+})
+
+//24
+
