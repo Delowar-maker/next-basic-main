@@ -99,3 +99,18 @@ db.monthlyBudget.find({
 
 //24
 
+use('CraftShop') //CraftShop database Name
+db.employees.find({
+    name: { $regex: '/[.*+?^${}()|[\]\\/]' } //search Data return data
+})
+
+use('CraftShop') //CraftShop database Name
+db.employees.find({
+    name: { $regex: '/[.*+?^${}()|[\]\\/]' } //search Data return data
+})
+
+use('CraftShop') //CraftShop database Name
+
+db.monthlyBudget.find({
+    $Where: "this.budget > this.span" // this must be use
+})
