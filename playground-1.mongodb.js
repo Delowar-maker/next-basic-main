@@ -113,3 +113,9 @@ db.employees.find({
 use('test1')
 db.brands.find().sort({ name: 1 })
 use('test1')
+
+
+//count
+use('test1')
+db.brands.find().count('total') // total must be used
+
