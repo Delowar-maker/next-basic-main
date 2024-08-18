@@ -109,3 +109,7 @@ use('CraftShop') //CraftShop database Name
 db.employees.find({
     salary: { $type: 2 }
 })
+
+use('test1')
+db.brands.find().sort({ name: 1 })
+use('test1')
