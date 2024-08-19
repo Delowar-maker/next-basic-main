@@ -119,3 +119,7 @@ use('test1')
 use('test1')
 db.brands.find().count('total') // total must be used
 
+use('test1')
+db.brands.find().limit(2) //frist 2 showing
+use('test1')
+db.brands.find().limit(2).skip(1) // frist 1 not showing but 2 showing
