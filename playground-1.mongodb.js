@@ -127,3 +127,6 @@ db.brands.find().limit(2).skip(1) // frist 1 not showing but 2 showing
 // short limit together
 use('test1')
 db.brands.find().sort({ _id: -1 }).limit(2)
+// //distinct   method
+use('test1')
+db.brands.distinct('name') // unique data
