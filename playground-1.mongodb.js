@@ -135,3 +135,7 @@ use('test1')
 db.brands.deleteOne({
     "_id": ObjectId("66bf6dd081f0a2508a9eb8e2")
 })
+use('test1')
+db.brands.deleteMany({
+    price: { $in: [3000, 5000] }
+})
