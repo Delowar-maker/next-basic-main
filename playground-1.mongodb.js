@@ -130,3 +130,8 @@ db.brands.find().sort({ _id: -1 }).limit(2)
 // //distinct   method
 use('test1')
 db.brands.distinct('name') // unique data
+
+use('test1')
+db.brands.deleteOne({
+    "_id": ObjectId("66bf6dd081f0a2508a9eb8e2")
+})
