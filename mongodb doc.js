@@ -115,3 +115,5 @@ db.monthlyBudget.find({
     $Where: "this.budget > this.span" // this must be use
 })
 //add aggregate
+use('test1')
+db.brands.aggregate([])
