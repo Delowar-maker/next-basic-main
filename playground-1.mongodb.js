@@ -139,3 +139,7 @@ use('test1')
 db.brands.deleteMany({
     price: { $in: [3000, 5000] }
 })
+use('test1')
+db.brands.aggregate([
+    { $count: "total" }
+])
