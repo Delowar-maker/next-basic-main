@@ -143,3 +143,7 @@ use('test1')
 db.brands.aggregate([
     { $count: "total" }
 ])
+use('test1')
+db.brands.aggregate([
+    { $sort: { name: 1 } }
+])
