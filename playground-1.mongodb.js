@@ -147,3 +147,6 @@ use('test1')
 db.brands.aggregate([
     { $sort: { name: 1 } }
 ])
+db.brands.aggregate([
+    { $sort: { name: -1 } }
+])
