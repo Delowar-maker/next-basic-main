@@ -151,3 +151,6 @@ db.brands.aggregate([
     { $sort: { name: -1 } }
 ])
 // sort complet
+db.brands.aggregate([
+    { $limit: 2 }
+])
