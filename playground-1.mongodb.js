@@ -154,3 +154,7 @@ db.brands.aggregate([
 db.brands.aggregate([
     { $limit: 2 }
 ])
+db.brands.aggregate([
+    { $sort: { _id: 1 } }, // asscending
+    { $limit: 2 }
+])
