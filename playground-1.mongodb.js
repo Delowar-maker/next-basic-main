@@ -158,3 +158,8 @@ db.brands.aggregate([
     { $sort: { _id: 1 } }, // asscending
     { $limit: 2 }
 ])
+use('CraftShop')
+db.employees.aggregate([
+    { $match: { $gt: { salary: 4000 } } },
+    { $match: { city: "London" } }
+])
