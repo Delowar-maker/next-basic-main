@@ -163,3 +163,8 @@ db.employees.aggregate([
     { $match: { $gt: { salary: 4000 } } },
     { $match: { city: "London" } }
 ])
+use('CraftShop')
+db.employees.aggregate([
+    { $match: $and([{ salary: { $gt: 4000 } }, { city: "London" }]) },
+
+])
