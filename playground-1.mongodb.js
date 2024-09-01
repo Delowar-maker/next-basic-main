@@ -163,6 +163,12 @@ db.employees.aggregate([
     { $match: { $gt: { salary: 4000 } } },
     { $match: { city: "London" } }
 ])
+
+use('test1')
+
+db.employees.aggregate([
+    { $match: { name: /a/ } } // must be use / / blank slash 2
+])
 use('CraftShop')
 db.employees.aggregate([
     { $match: $and([{ salary: { $gt: 4000 } }, { city: "London" }]) },
