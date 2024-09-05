@@ -182,3 +182,7 @@ db.employees.find({ name: /a/ })
 db.products.aggregate([
     { $match: { name: { $in: ["Apple iPhone", "Samsung Galaxy"] } } }
 ])
+use('CraftShop') //CraftShop database Name
+db.brands.aggregate([
+    { $project: { _id: 0 } }
+])
