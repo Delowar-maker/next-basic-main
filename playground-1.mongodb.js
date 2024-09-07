@@ -186,3 +186,11 @@ use('CraftShop') //CraftShop database Name
 db.brands.aggregate([
     { $project: { _id: 0 } }
 ])
+
+db.employees.aggregate([
+    {
+        $group: { _id: "$dsesignation", city: "$city" },
+        sum: { $sum: "$salary" },
+    }
+
+])
