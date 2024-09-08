@@ -94,6 +94,17 @@ db.employees.find({
         { name: { $eq: "John" } }
     ]
 })
+//  group by multiple
+db.employees.aggregate([
+    {
+        $group: { _id: "$dsesignation", city: "$city" },
+        sum: { $sum: "$salary" },
+        avg: { $avg: "$salary" },
+        max: { $max: "$salary" },
+        min: { $min: "$salary" }
+    }
+
+])
 
 use('CraftShop') //CraftShop database Name
 // exists true show property
