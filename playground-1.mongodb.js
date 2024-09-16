@@ -208,3 +208,7 @@ db.employees.aggregate([
 db.employees.aggregate([
     { $group: { _id: "$dsesignation", total: { $sum: "$salary" }, avg: { $avg: "$salary" } } }
 ])
+// without group by sum and avg
+db.employees.aggregate([
+    { $group: { _id: "$dsesignation", total: { $sum: "$salary" }, avg: { $avg: "$salary" } } }
+])
