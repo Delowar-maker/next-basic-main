@@ -212,3 +212,6 @@ db.employees.aggregate([
 db.employees.aggregate([
     { $group: { _id: "$dsesignation", total: { $sum: "$salary" }, avg: { $avg: "$salary" } } }
 ])
+db.employees.aggregate([
+    { $group: { _id: 0, max: { $max: "$salary" } } } // 0 must be use
+])
