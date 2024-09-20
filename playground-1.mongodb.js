@@ -218,3 +218,6 @@ db.employees.aggregate([
 db.employees.aggregate([
     { $group: { _id: 0, sum: { $sum: "$salary" } } } // 0 must be use
 ])
+db.employees.aggregate([
+    { $group: { _id: 0, sum: { $sum: "$salary" } } } // 0 must be use
+])
