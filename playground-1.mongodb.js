@@ -224,3 +224,6 @@ db.employees.aggregate([
 db.employees.aggregate([
     { $group: { _id: 0, avg: { $avg: "$salary" } } } // 0 must be use
 ])
+db.products.aggregate([
+    { $lookup: { from: "categories", localField: "categoryID", foreignField: "categoryID", as: "category" } }
+])
