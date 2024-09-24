@@ -227,3 +227,9 @@ db.employees.aggregate([
 db.products.aggregate([
     { $lookup: { from: "categories", localField: "categoryID", foreignField: "categoryID", as: "category" } }
 ])
+
+export async function GET() {
+    console.log('Hello, Next.js!');
+
+    return new Response('Hello, Next.js!')
+}
