@@ -233,3 +233,24 @@ export async function GET() {
 
     return new Response('Hello, Next.js!')
 }
+import comments from "@/app/data/comments";
+
+export async function GET() {
+    return Response.json(comments)
+}
+export async function POST(request) {
+    const comment = await request.json();
+    const newComment = {
+        // id: Math.random(),
+        id: comments.length + 1,
+        ...comment
+    }
+    comments.push(newComment);
+    // return Response.json(newComment)
+    return new Response(JSON.stringify(newComment), {
+        headers: {
+            "Content-Type": "application/json"
+        },
+        status: 201
+    })
+}
