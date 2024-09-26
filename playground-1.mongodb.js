@@ -254,3 +254,36 @@ export async function POST(request) {
         status: 201
     })
 }
+
+import comments from "@/app/data/comments";
+import { redirect } from "next/navigation";
+
+export async function GET(_request, { params }) {
+    const commentId = params.id;
+    if (parseInt(commentId) > comments.length) {
+        redirect('/api/comments')
+    }
+    const comment = comments.find(comment => comment.id === parseInt(commentId))
+    return Response.json(comment)
+}
+
+
+// PATCH
+
+export async function PATCH(request, { params }) {
+    const comment = await request.json() // request থেকে বের করে নিয়ে আসলাম
+    const commentId = params.id
+    const commentIndex = comments.findIndex(comment => comment.id === parseInt(commentId))
+    comments[commentIndex].text = comment.text;
+    return Response.json(comments[commentIndex])
+}
+
+// DELETE
+export async function DELETE(_request, { params }) {
+
+    const commentId = params.id
+    const commentIndex = comments.findIndex(comment => comment.id === parseInt(commentId))
+    const commentToDelete = comments[commentIndex]
+    comments.splice(commentIndex, 1)
+    return Response.json(commentToDelete)
+}
