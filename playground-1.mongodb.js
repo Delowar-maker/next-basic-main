@@ -287,3 +287,8 @@ export async function DELETE(_request, { params }) {
     comments.splice(commentIndex, 1)
     return Response.json(commentToDelete)
 }
+export function GET(request) {
+  const searchParams = request.nextUrl.searchParams
+  const query = searchParams.get('query')
+  // query is "hello" for /api/search?query=hello
+}
