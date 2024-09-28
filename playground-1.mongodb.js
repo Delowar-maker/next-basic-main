@@ -292,3 +292,12 @@ export function GET(request) {
   const query = searchParams.get('query')
   // query is "hello" for /api/search?query=hello
 }
+export async function GET(request) {
+    const requestHeaders = new Headers(request.headers)
+        // console.log(requestHeaders);
+    
+    console.log(requestHeaders.get('Authorization'));
+
+    return new Response('Profile API')
+
+}
