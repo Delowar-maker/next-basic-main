@@ -301,3 +301,14 @@ export async function GET(request) {
     return new Response('Profile API')
 
 }
+
+import { headers } from "next/headers";
+export async function GET(_request) {
+    // const requestHeaders = new Headers(request.headers)
+    // console.log(requestHeaders);
+    // console.log(requestHeaders.get('Authorization'));
+    const headersList = headers()
+    console.log(headersList.get('Authorization'));
+    return new Response('Profile API')
+
+}
