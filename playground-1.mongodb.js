@@ -312,3 +312,12 @@ export async function GET(_request) {
     return new Response('Profile API')
 
 }
+
+export async function GET(request) {
+    console.log(request.cookies.get('theme'));
+    return new Response("Profile API", {
+        status: 200,
+        headers: { 'Set-Cookie': "theme=orange" },
+    })
+}
+
