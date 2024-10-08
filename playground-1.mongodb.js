@@ -338,3 +338,10 @@ export async function GET(request) {
     headers: { 'Set-Cookie': `token=${token}` },
   })
 }
+export async function GET(request) {
+    console.log(request.cookies.get('theme'));
+    return new Response("Profile API", {
+        status: 200,
+        headers: { 'Set-Cookie': "theme=orange" },
+    })
+}
