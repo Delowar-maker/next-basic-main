@@ -340,8 +340,8 @@ export async function GET(request) {
 }
 export async function GET(request) {
     console.log(request.cookies.get('theme'));
-    return new Response("Profile API", {
-        status: 200,
-        headers: { 'Set-Cookie': "theme=orange" },
-    })
+   return new Response('Hello, Next.js!', {
+    status: 200,
+    headers: { 'Set-Cookie': `token=${token}` },
+  })
 }
