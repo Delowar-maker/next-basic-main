@@ -345,3 +345,5 @@ export async function GET(request) {
     headers: { 'Set-Cookie': `token=${token}` },
   })
 }
+A page is UI that is unique to a route. You can define a page by default exporting a component from a page.js file.
+For example, to create your index page, add the page.js file inside the app directory:
