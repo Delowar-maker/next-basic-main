@@ -352,3 +352,6 @@ export async function GET(request) {
 export default function Page() {
   return <h1>Hello, Home page!</h1>
 }
+db.employees.aggregate([
+    { $group: { _id: 0, avg: { $avg: "$salary" } } } // 0 must be use
+])
