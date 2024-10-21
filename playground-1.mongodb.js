@@ -359,3 +359,14 @@ use('only-test')
 db.employee.aggregate([
     {$count:'total'}
 ])
+
+How to make aggregate pipeline and stateging 
+Runes 1: aggregate(
+[] // pipeline
+)
+Runes : aggregate(
+[
+    { }, // stateting 
+   { }, // state 
+] 
+)
