@@ -391,4 +391,7 @@ const {title, year, genre, star, director} = favouriteFilm
 
 console.log(`My favourite film is ${title} starring ${star}. It's an ${genre} film that was directed by ${director} and released in ${year}.`)
 
-
+let x = 5;
+let y = ++x;  // Pre-increment
+console.log(x);  // Output: 6
+console.log(y);  // Output: 6
