@@ -395,3 +395,6 @@ let x = 5;
 let y = ++x;  // Pre-increment
 console.log(x);  // Output: 6
 console.log(y);  // Output: 6
+
+use('test1')
+db.brands.find().count('total') // total must be used
