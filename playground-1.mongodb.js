@@ -398,3 +398,5 @@ console.log(y);  // Output: 6
 
 use('test1')
 db.brands.find().count('total') // total must be used
+
+Name:{type:String, requird:true}
