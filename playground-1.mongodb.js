@@ -400,3 +400,15 @@ use('test1')
 db.brands.find().count('total') // total must be used
 
 Name:{type:String, requird:true}
+
+exports.CreateToken=(req,res)=>{
+
+    let Payload={
+        exp:Math.floor(Date.now() / 1000) + (20),
+        data:{Name:"Delowar",City:"Dhaka",admin:true}
+    }
+
+    let Token= jwt.sign(Payload,"SecretKey123");
+
+    res.send(Token)
+
