@@ -412,3 +412,12 @@ exports.CreateToken=(req,res)=>{
 
     res.send(Token)
 
+
+    db.employees.aggregate([
+    { $group: { _id: 0, avg: { $avg: "$salary" } } } // 0 must be use
+])
+use('only-test')
+db.employee.aggregate([
+    {$count:'total'}
+])
+
