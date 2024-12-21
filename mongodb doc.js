@@ -117,3 +117,12 @@ db.monthlyBudget.find({
 //add aggregate
 use('test1')
 db.brands.aggregate([])
+
+
+db.employees.find({
+    $or: [ // multiple condition
+        { salary: { $gt: 50000 } },
+        { name: { $eq: "John" } }
+    ]
+})
+
