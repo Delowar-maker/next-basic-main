@@ -422,4 +422,15 @@ db.employee.aggregate([
 ])
 
     // some chaged
+db.brands.insertMany( //brands collection name
 
+    [
+        {
+            "name": "Banana",
+        },
+        {
+            "name": "Puma",
+        }
+    ]
+)
+//w=
