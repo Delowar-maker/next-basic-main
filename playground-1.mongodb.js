@@ -423,8 +423,6 @@ db.employee.aggregate([
 
     // some chaged
 db.brands.insertMany( //brands collection name
-
-    [
         {
             "name": "Banana",
         },
@@ -434,3 +432,4 @@ db.brands.insertMany( //brands collection name
     ]
 )
 //w=
+    bd.b
