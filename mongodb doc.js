@@ -125,4 +125,8 @@ db.employees.find({
         { name: { $eq: "John" } }
     ]
 })
-
+function mysticalAnimal(type, collects, canFly){
+    this.type = type;
+    this.collects = collects;
+    this.canFly = canFly;
+}
