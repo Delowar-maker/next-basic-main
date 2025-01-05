@@ -440,3 +440,5 @@ db.brands.insertMany( //brands collection name
 )
 //w=
     bd.b
+    const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
