@@ -442,3 +442,8 @@ db.brands.insertMany( //brands collection name
     bd.b
     const fruits = ["apple", "orange", "cherry"];
 fruits.forEach(myFunction);
+async function getText(file) {
+  let x = await fetch(file);
+  let y = await x.text();
+  myDisplay(y);
+}
