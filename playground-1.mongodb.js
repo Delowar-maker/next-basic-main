@@ -457,3 +457,12 @@ async function getText(file) {
 
 console.log(getVowels('sky'));
 // Expected output: 0
+Example Document
+{
+	title: "Post Title 1",
+	body: "Body of post.",
+	category: "News",
+	likes: 1,
+	tags: ["news", "events"],
+	date: Date()
+}
