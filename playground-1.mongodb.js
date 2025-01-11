@@ -489,4 +489,6 @@ const Rectangle = class Rectangle2 {
     this.width = width;
   }
 };
+	const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+console.log(shopping);
 	
