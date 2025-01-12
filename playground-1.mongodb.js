@@ -492,3 +492,24 @@ const Rectangle = class Rectangle2 {
 	const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
 console.log(shopping);
 	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+    <title>HTML Document</title>
+</head>
+<body>
+    <h1 style="color:green;">
+          GeeksforGeeks
+      </h1>
+    <!-- JavaScript -->
+    <script>
+      document.writeln
+      ("A computer science");
+      document.writeln
+      ("portal for geeks.");
+    </script>
+</body>
+</html>
