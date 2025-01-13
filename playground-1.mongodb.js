@@ -491,6 +491,12 @@ const Rectangle = class Rectangle2 {
 };
 	const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
 console.log(shopping);
+	function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+	}
 	
 <!DOCTYPE html>
 <html lang="en">
