@@ -523,3 +523,6 @@ const paragraphs = document.querySelectorAll("p");
 // paragraphs[0] is the first <p> element
 // paragraphs[1] is the second <p> element, etc.
 alert(paragraphs[0].nodeName);
+function calculate(a, b, c, d) {
+   console.log('Sum: ' + (a + b + c + d));
+}
