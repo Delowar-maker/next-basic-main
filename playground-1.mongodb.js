@@ -526,3 +526,6 @@ alert(paragraphs[0].nodeName);
 function calculate(a, b, c, d) {
    console.log('Sum: ' + (a + b + c + d));
 }
+let str = "Price: $5–$10";
+let result = str.match(/\$\d+/g);
+console.log(result);
