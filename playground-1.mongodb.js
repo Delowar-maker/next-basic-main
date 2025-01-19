@@ -529,3 +529,7 @@ function calculate(a, b, c, d) {
 let str = "Price: $5–$10";
 let result = str.match(/\$\d+/g);
 console.log(result);
+var total = arr.reduce(function(sum, item, index, fullArr) {
+   console.log('Item: ' + item + ' and index: ' + index + '. Full Array: ' + fullArr + ' and sum: ' + sum);
+   return sum += item
+}, 0)
