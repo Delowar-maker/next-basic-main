@@ -533,3 +533,6 @@ var total = arr.reduce(function(sum, item, index, fullArr) {
    console.log('Item: ' + item + ' and index: ' + index + '. Full Array: ' + fullArr + ' and sum: ' + sum);
    return sum += item
 }, 0)
+Array.fromAsync(arrayLike)
+Array.fromAsync(arrayLike, mapFn)
+Array.fromAsync(arrayLike, mapFn, thisArg)
