@@ -536,3 +536,25 @@ var total = arr.reduce(function(sum, item, index, fullArr) {
 Array.fromAsync(arrayLike)
 Array.fromAsync(arrayLike, mapFn)
 Array.fromAsync(arrayLike, mapFn, thisArg)
+
+
+function y() {
+    console.log("Y", this);
+}
+undefined
+y()
+VM461:2 Y Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+const obj = {
+    items:15
+}
+undefined
+obj
+{items: 15}
+obj.me = y
+ƒ y() {
+    console.log("Y", this);
+}
+obj.me()
+VM461:2 Y {items: 15, me: ƒ}items: 15me: ƒ y()[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+undefined
