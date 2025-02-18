@@ -586,3 +586,7 @@ db.brands.insertOne( //brands collection name
         "name": "Adidas",
     }
 )
+db.brands.find(
+    {}, // spacial parometer
+    { projection: { _id: 0 } }
+)
