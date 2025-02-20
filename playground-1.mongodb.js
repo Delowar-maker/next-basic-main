@@ -596,3 +596,14 @@ function Person(first, last, age, eyecolor) {
   this.age = age;
   this.eyeColor = eyecolor;
 }
+const roles = {
+  admin: {
+    can: ['create', 'edit', 'delete', 'view'],
+  },
+  editor: {
+    can: ['create', 'edit', 'view'],
+  },
+  viewer: {
+    can: ['view'],
+  },
+};
