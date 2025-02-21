@@ -607,3 +607,10 @@ const roles = {
     can: ['view'],
   },
 };
+let name = 'John';
+let age = 25;
+
+let person = {
+  name: 'John',
+  age: 25,
+};
