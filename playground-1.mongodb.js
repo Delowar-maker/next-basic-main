@@ -622,3 +622,10 @@ app.get('/', function (req, res) {
 app.listen(3000);
 console.log('Example app listening on port 3000!');
 
+db.employees.aggregate([
+    {
+        $group: { _id: "$dsesignation", city: "$city" },
+        sum: { $sum: "$salary" },
+    }
+
+])
