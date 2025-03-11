@@ -55,3 +55,8 @@ let x;
 
 console.log(test(x));
 // Expected output: "Undefined value!"
+
+
+for (variable of iterable) {
+  // code block to be executed
+}
