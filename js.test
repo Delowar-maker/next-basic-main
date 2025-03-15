@@ -67,3 +67,5 @@ for (const property in object) {
 }
 const fruits = ["apple", "orange", "cherry"];
 fruits.forEach(myFunction);
+let num = 071;
+console.log(num);
