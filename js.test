@@ -69,3 +69,5 @@ const fruits = ["apple", "orange", "cherry"];
 fruits.forEach(myFunction);
 let num = 071;
 console.log(num);
+let name = 'John';
+let age = 25;
