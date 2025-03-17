@@ -71,3 +71,6 @@ let num = 071;
 console.log(num);
 let name = 'John';
 let age = 25;
+"use strict"
+let b = 058; // invalid octal 
+console.log(b);
