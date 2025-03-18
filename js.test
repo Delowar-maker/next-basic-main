@@ -76,3 +76,10 @@ let b = 058; // invalid octal
 console.log(b);
 let a = 051;
 console.log(a); // 41
+let name = 'John';
+let age = 25;
+
+let person = {
+  name: 'John',
+  age: 25,
+};
