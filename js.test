@@ -83,3 +83,8 @@ let person = {
   name: 'John',
   age: 25,
 };
+let remainder = -5 % 3;
+console.log(remainder); // -2
+
+remainder = -5 % -3;
+console.log(remainder); // -
