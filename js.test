@@ -98,3 +98,9 @@ let eligible = false,
 
 console.log(!eligible);
 console.log(!required
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+  if (i == 2) {
+    break;
+  }
+}
