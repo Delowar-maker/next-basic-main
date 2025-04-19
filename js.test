@@ -1,4 +1,4 @@
-const array1 = [1, 2, 3, 4];
+biconst array1 = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
@@ -113,3 +113,6 @@ doSomething(() => {
 
 console.log(value);
 <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+for (variable of iterable) {
+  // code block to be executed
+}
