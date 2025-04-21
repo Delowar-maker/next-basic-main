@@ -121,3 +121,6 @@ const person = {fname:"John", lname:"Doe", age:25};
 let text = "";
 for (let x in person) {
   text += person[x];
+let amount = 120_201_123.05; // 120201123.05
+let expense = 123_450; // 123450
+let fee = 12345_00; // 1234500
