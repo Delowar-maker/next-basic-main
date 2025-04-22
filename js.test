@@ -1,4 +1,4 @@
-biconst array1 = [1, 2, 3, 4];
+6biconst array1 = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
@@ -124,3 +124,5 @@ for (let x in person) {
 let amount = 120_201_123.05; // 120201123.05
 let expense = 123_450; // 123450
 let fee = 12345_00; // 1234500
+let sum = 10 + 20;
+console.log(sum); // 30
