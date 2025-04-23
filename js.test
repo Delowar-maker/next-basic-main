@@ -1,4 +1,4 @@
-6biconst array1 = [1, 2, 3, 4];
+const array1 = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
@@ -126,3 +126,6 @@ let expense = 123_450; // 123450
 let fee = 12345_00; // 1234500
 let sum = 10 + 20;
 console.log(sum); // 30
+const sym1 = Symbol();
+const sym2 = Symbol("foo");
+const sym3 = Symbol("foo");
