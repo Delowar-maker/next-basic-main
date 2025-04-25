@@ -129,3 +129,14 @@ console.log(sum); // 30
 const sym1 = Symbol();
 const sym2 = Symbol("foo");
 const sym3 = Symbol("foo");
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
