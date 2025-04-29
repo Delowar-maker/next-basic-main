@@ -130,6 +130,9 @@ const sym1 = Symbol();
 const sym2 = Symbol("foo");
 const sym3 = Symbol("foo");
 <html>
+Number(true);
+Number(false);
+Number(new Date());
 <body>
 
 <p id="demo"></p>
