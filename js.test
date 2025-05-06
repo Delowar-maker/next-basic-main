@@ -161,3 +161,6 @@ const colors = ['red','green','blue'];
 colors.reverse();
 
 console.log(colors);
+push(newElement);
+push(newElement1,newElement2);
+push(newElement1,newElement2,...,newElementN);
