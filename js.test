@@ -164,3 +164,10 @@ console.log(colors);
 push(newElement);
 push(newElement1,newElement2);
 push(newElement1,newElement2,...,newElementN);
+new Promise((resolveOuter) => {
+  resolveOuter(
+    new Promise((resolveInner) => {
+      setTimeout(resolveInner, 1000);
+    }),
+  );
+});
