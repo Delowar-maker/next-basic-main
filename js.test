@@ -174,3 +174,9 @@ new Promise((resolveOuter) => {
 let name = null;
 let text = "missing";
 let result = name ?? text;
+const numbers = [1, 2, 3];
+const total = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
+
+console.log({ total });
