@@ -180,3 +180,5 @@ const total = numbers.reduce(
 );
 
 console.log({ total });
+parentNode.append(...nodes);
+parentNode.append(...DOMStrings);
