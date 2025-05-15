@@ -182,3 +182,9 @@ const total = numbers.reduce(
 console.log({ total });
 parentNode.append(...nodes);
 parentNode.append(...DOMStrings);
+function say(message='Hi') {
+    console.log(message);
+}
+
+say(); // 'Hi'
+say('Hello') // 'Hello'
