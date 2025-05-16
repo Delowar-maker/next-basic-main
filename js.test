@@ -188,3 +188,7 @@ function say(message='Hi') {
 
 say(); // 'Hi'
 say('Hello') // 'Hello'
+const s = "JavaScript is awesome";
+const result = s.endsWith("Awesome");
+
+console.log({ result });
