@@ -196,3 +196,7 @@ const s = "JavaScript is awesome";
 const result = s.endsWith("awesome");
 
 console.log({ result });
+const colors = ['red','green','blue'];
+colors.reverse();
+
+console.log(colors);
