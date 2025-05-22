@@ -200,3 +200,7 @@ const colors = ['red','green','blue'];
 colors.reverse();
 
 console.log(colors);
+const scores = [1, 3, 5, 7];
+scores.reverse();
+
+console.log(scores);
