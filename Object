@@ -22,3 +22,16 @@ const person = {
 
 const accessKeysObject = Object.keys(person)
 console.log(accessKeysObject)
+
+// 3. accessObjectvalues
+
+const person = {
+    Name: 'Kamal',
+    FullName: 'kamla khan',
+    Age: 25,
+    Village: 'Mymenshing',
+    PostCode: 2000
+}
+
+const accessValueObject = Object.values(person)
+console.log(accessValueObject)
