@@ -35,3 +35,21 @@ const person = {
 
 const accessValueObject = Object.values(person)
 console.log(accessValueObject)
+
+//4. loop using Object
+
+
+const person = {
+    Name: 'Kamal',
+    FullName: 'kamla khan',
+    Age: 25,
+    Village: 'Mymenshing',
+    PostCode: 2000
+}
+
+if ("Name" in person) {
+    console.log("Name exists in the object");
+}
+else {
+    console.log("Name does not exist in the object");
+}
